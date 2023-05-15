@@ -18,11 +18,11 @@ body{
 }
 
 main{
-    display: grid;
-    grid-template-columns: 1000px;
-    grid-template-rows: 360px 220px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
     align-items: center;
+    justify-content: center;
 }
 
 main header{
@@ -74,12 +74,13 @@ main section .menu-items .item-info{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    width: 56%;
 }
 
 main section .menu-items{
-    display: flex;
-    gap: 1.6rem;
-    max-width: 64rem;
+    display: grid;
+    grid-template-columns: 560px 360px;
+    gap: 3.2rem;
 }
 
 main section .menu-items .item-info .item-title p{
